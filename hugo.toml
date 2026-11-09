@@ -1,0 +1,68 @@
+# Hugo 配置（Stack 主题）
+baseurl = "http://localhost:1313/"
+languageCode = "zh-cn"
+DefaultContentLanguage = "zh-cn"
+title = "我的小站"
+theme = "hugo-theme-stack"
+
+[pagination]
+pagerSize = 5
+
+[permalinks]
+post = "/p/:slug/"
+page = "/:slug/"
+
+[params]
+mainSections = ["post"]
+featuredImageField = "image"
+rssFullContent = true
+
+[params.footer]
+since = 2026
+[params.footer.author]
+name = "KatelynLyu"
+
+[params.sidebar]
+emoji = "🍥"
+subtitle = "写点东西的地方"
+compact = false
+avatar = ""
+
+[params.article]
+toc = true
+readingTime = true
+[params.article.license]
+enabled = false
+
+[params.comments]
+enabled = false
+
+[[menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 1
+[menu.main.params]
+icon = "home"
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 2
+[menu.main.params]
+icon = "user"
+
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 3
+[menu.main.params]
+icon = "archives"
+
+[markup.highlight]
+style = "dracula"
+
+[markup.goldmark.renderer]
+unsafe = true
