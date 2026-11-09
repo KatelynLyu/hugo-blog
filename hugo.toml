@@ -1,5 +1,5 @@
 # Hugo 配置（Stack 主题）
-baseurl = "http://localhost:1313/"
+baseurl = "https://katelynlyu.github.io/hugo-blog/"
 languageCode = "zh-cn"
 DefaultContentLanguage = "zh-cn"
 title = "我的小站"
